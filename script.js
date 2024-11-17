@@ -18,7 +18,7 @@ function cargarCanciones() {
         li.innerHTML = `
             <div class="portada" style="background-image: url('${cancion.portada}');"></div>
             ${cancion.nombre}
-            <audio controls>
+            <audio>
                 <source src="${cancion.url}" type="audio/mp3">
                 Tu navegador no soporta el elemento de audio.
             </audio>
