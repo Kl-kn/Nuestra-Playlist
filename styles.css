@@ -1,0 +1,130 @@
+/* Importamos la fuente de lujo */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    font-family: 'Great Vibes', cursive;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor del título "Playlist de Nuestro Aniversario" */
+.titulo-container {
+    background-color: white;
+    color: #a1925a;
+    border: 2px solid #C5B358;
+    border-radius: 10px;
+    padding: 15px; /* Ajuste del padding para pantallas pequeñas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-size: 1.8rem; /* Tamaño ajustado para pantallas más pequeñas */
+    text-align: center;
+    width: 90vw;
+    max-width: 500px; /* Ajuste del max-width para pantallas pequeñas */
+    margin-bottom: 15px; /* Reducción de espacio entre el título y la introducción */
+}
+
+/* Reproductor de audio */
+audio {
+    margin-top: 15px;
+    width: 90vw;
+    max-width: 500px; /* Ajuste del max-width */
+    border-radius: 10px;
+    border: 2px solid #C5B358;
+    background-color: white;
+}
+
+/* Contenedor de la lista de canciones */
+.playlist-container {
+    margin-top: 15px;
+}
+
+/* Lista de canciones */
+#playlist {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+    width: 90vw;
+    max-width: 500px; /* Ajuste del max-width */
+}
+
+/* Estilo para cada canción */
+#playlist li {
+    background-color: white;
+    color: #a1925a;
+    border: 2px solid #C5B358;
+    border-radius: 10px;
+    padding: 8px; /* Ajuste del padding */
+    margin-bottom: 8px; /* Menor separación entre las canciones */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-size: 1rem; /* Tamaño de texto reducido */
+    font-family: 'Great Vibes', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Para la portada */
+}
+
+/* Portada de la canción */
+#playlist li .portada {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 15px; /* Espacio entre la portada y el nombre de la canción */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo para los controles del reproductor de audio */
+#playlist li audio {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    .titulo-container {
+        font-size: 1.5rem; /* Ajuste aún más pequeño del tamaño del título */
+        padding: 12px;
+    }
+
+    .introduccion {
+        font-size: 1rem; /* Reducción del tamaño del texto de la introducción */
+        padding: 8px;
+    }
+
+    #playlist li {
+        font-size: 0.9rem; /* Tamaño de las canciones más pequeño */
+        padding: 10px;
+    }
+
+    audio {
+        font-size: 1rem; /* Tamaño del reproductor reducido */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .titulo-container {
+        font-size: 1.2rem; /* Tamaño aún más pequeño para pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .introduccion {
+        font-size: 0.9rem; /* Reducción aún mayor para la introducción */
+        padding: 6px;
+    }
+
+    #playlist li {
+        font-size: 0.8rem; /* Reducción para adaptarse mejor a pantallas muy pequeñas */
+        padding: 8px;
+    }
+
+    audio {
+        font-size: 0.9rem; /* Tamaño del reproductor aún más pequeño */
+    }
+}
