@@ -28,7 +28,7 @@ body {
     margin-bottom: 15px; /* Reducción de espacio entre el título y la introducción */
 }
 
-/* Reproductor de audio */
+/* Reproductor de audio sin controles */
 audio {
     margin-top: 15px;
     width: 90vw;
@@ -36,6 +36,8 @@ audio {
     border-radius: 10px;
     border: 2px solid #C5B358;
     background-color: white;
+    display: block; /* Aseguramos que el reproductor ocupe el espacio completo */
+    opacity: 0; /* Hacemos el reproductor invisible */
 }
 
 /* Contenedor de la lista de canciones */
@@ -77,13 +79,6 @@ audio {
     margin-right: 15px; /* Espacio entre la portada y el nombre de la canción */
     background-size: cover;
     background-position: center;
-}
-
-/* Estilo para los controles del reproductor de audio */
-#playlist li audio {
-    width: 100%;
-    border: none;
-    background-color: transparent;
 }
 
 /* Media queries */
